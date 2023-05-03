@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            app:title="图片上传"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/upload1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传第一张图片" />
+
+        <Button
+            android:id="@+id/upload2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传第二张图片" />
+
+        <Button
+            android:id="@+id/upload3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传第三张图片" />
+
+        <Button
+            android:id="@+id/upload4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传第四张图片" />
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
